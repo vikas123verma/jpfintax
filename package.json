@@ -1,0 +1,19 @@
+{
+  "name": "jpfintax-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Monorepo for JP FIN TAX SERVICES LLP web platform and API",
+  "scripts": {
+    "dev": "pnpm --filter web dev",
+    "dev:all": "pnpm --parallel dev",
+    "dev:api": "pnpm --filter api dev",
+    "build": "pnpm --filter web build",
+    "build:all": "pnpm --recursive run build",
+    "lint": "pnpm --filter web lint",
+    "preview": "pnpm --filter web preview"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.3"
+  },
+  "packageManager": "pnpm@12.3.4"
+}
