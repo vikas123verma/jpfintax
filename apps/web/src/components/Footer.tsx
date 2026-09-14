@@ -4,6 +4,7 @@ import { Container } from './Container';
 import { Phone, Mail, MapPin, ArrowUpRight, ShieldCheck } from 'lucide-react';
 import { SERVICES_DATA } from '../data/services';
 import { BRAND_INFO } from '@jpfintax/ui';
+import logoUrl from '../assets/logo.svg';
 
 export const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
@@ -15,7 +16,7 @@ export const Footer: React.FC = () => {
           {/* Brand Column */}
           <div className="lg:col-span-4">
             <Link to="/" className="flex items-center space-x-3 mb-4">
-              <img src="/logo.svg" alt="JP FinTax Logo" className="w-9 h-9" />
+              <img src={logoUrl} alt="JP FinTax Logo" className="w-9 h-9" />
               <span className="font-heading font-semibold text-lg text-white tracking-tight">
                 JP FIN TAX SERVICES LLP
               </span>

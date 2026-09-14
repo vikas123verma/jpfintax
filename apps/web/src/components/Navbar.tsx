@@ -5,6 +5,7 @@ import { Container } from './Container';
 import { Button } from './Button';
 import { useScrollPosition } from '../hooks/useScrollPosition';
 import { BRAND_INFO } from '@jpfintax/ui';
+import logoUrl from '../assets/logo.svg';
 
 export const Navbar: React.FC = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -75,7 +76,7 @@ export const Navbar: React.FC = () => {
           {/* Logo & Brand Wordmark */}
           <Link to="/" className="flex items-center space-x-3 group">
             <img
-              src="/logo.svg"
+              src={logoUrl}
               alt="JP FIN TAX Logo"
               className="w-9 h-9 sm:w-10 sm:h-10 shrink-0 transition-transform duration-200 group-hover:scale-105"
             />
@@ -142,7 +143,7 @@ export const Navbar: React.FC = () => {
             <div>
               <div className="flex items-center justify-between pb-5 border-b border-[#DDE4E0]">
                 <div className="flex items-center space-x-2.5">
-                  <img src="/logo.svg" alt="JP FinTax" className="w-8 h-8" />
+                  <img src={logoUrl} alt="JP FinTax" className="w-8 h-8" />
                   <span className="font-heading font-semibold text-sm text-[#17201D]">
                     JP FIN TAX SERVICES
                   </span>
